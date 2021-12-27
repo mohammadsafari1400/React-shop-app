@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f3f3f3;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.842);
+}
+img {
+  width: 100%;
+  display: block;
+}
+
+.header {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #013870;
+}
+.header .logo {
+  color: #ebf6df;
+  font-size: 20px;
+}
+.header .nav {
+  display: flex;
+}
+.header .nav li {
+  margin-right: 10px;
+  color: #ebf6df;
+}
+.header .shop {
+  position: relative;
+}
+.header .shop i {
+  font-size: 22px;
+  color: #ebf6df;
+}
+.header .shop span {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  background-color: red;
+  font-size: 12px;
+  padding: 2px 5px;
+  border-radius: 50%;
+  color: white;
+}
+.home {
+  padding: 25px;
+}
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+}
+.posts .post {
+  width: 31%;
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.posts .post img {
+  width: 35%;
+  margin: 0 auto;
+}
+.posts .post .title {
+  margin: 10px 0;
+}
+.add-btn {
+  all: unset;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #013870;
+  cursor: pointer;
+  padding: 7px 0;
+  color: white;
+  font-size: 13px;
+}
+.single-post .info .add-btn {
+  width: 40%;
+}
+.single-post {
+  display: flex;
+  padding: 10px;
+}
+.single-post .pic {
+  width: 30%;
+}
+.single-post .info {
+  width: 70%;
+  margin: 10px 0 0 20px;
+}
+.single-post .info .title {
+  font-size: 20px;
+}
+.single-post .info .description {
+  width: 50%;
+  margin-top: 20px;
+}
+.single-post .info .colors {
+  display: inline-block;
+  padding: 12px 15px;
+  margin: 20px 0;
+}
+.single-post .info .sizes {
+  display: flex;
+}
+.single-post .info .sizes .size {
+  border: 1px solid rgba(0, 0, 0, 0.274);
+  margin-right: 5px;
+}
+
+.single-post .info .box {
+  width: 5%;
+  height: 60px;
+  display: flex;
+  margin: 20px 0;
+}
+.single-post .info .box .images {
+  width: 100%;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.single-post .pic img {
+  width: 90%;
+  height: 450px;
+  margin: 0 auto;
+}
+
+.cart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.096);
+  padding: 0 35px;
+}
+.cart img {
+  width: 5%;
+}
+.cart .count {
+  display: flex;
+}
+.cart .count button {
+  all: unset;
+  display: flex;
+  background-color: green;
+  color: white;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.cart .btn-remove {
+  all: unset;
+  display: flex;
+  background-color: red;
+  color: white;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.cart .count .counter {
+  padding: 2px 5px;
+}
+.total {
+  text-align: right;
+  margin-right: 35px;
+  padding: 30px;
+}
